@@ -1,6 +1,7 @@
 # realtime-analytics-dashboard
 Test Task for Realtime analytics dashboard including frontend written in React 18 as well as backend written in .NET 8
 
+---
 ## Requirements
 ### 1. Backend
    - [x] Create a RESTful API using any backend framework (e.g., C# .NET).
@@ -27,6 +28,72 @@ Test Task for Realtime analytics dashboard including frontend written in React 1
    - [x] Provide clear documentation on how to set up and run the project.
    - [x] Include a brief explanation of the architecture and design choices.
 
+---
+##  Setup Guide
+
+### Prerequisites
+1. **Node.js**: Ensure you have Node.js installed. You can download it from [Node.js](https://nodejs.org/).
+2. **.NET 8 SDK**: Ensure you have the .NET SDK installed. You can download it from [.NET SDK](https://dotnet.microsoft.com/download).
+
+### Folder Structure
+realtime-analytics-dashboard
+```
+├── .git
+├── .idea
+├── src
+│ ├── backend
+│ │ ├── Dashboard.API
+│ │ ├── Dashboard.Tests
+│ │ ├── Dashboard.API.sln
+│ ├── frontend
+│ │ ├── dashboard-ui
+│ │ │ ├── node_modules
+│ │ │ ├── public
+│ │ │ ├── src
+│ │ │ ├── .gitignore
+│ │ │ ├── package.json
+│ │ │ ├── package-lock.json
+```
+
+## Running the Backend
+1. **Navigate to the backend directory:**
+    ```bash
+    cd src/backend/Dashboard.API
+    ```
+
+2. **Restore dependencies:**
+    ```bash
+    dotnet restore
+    ```
+
+3. **Run the backend:**
+    ```bash
+    dotnet run
+    ```
+
+4. **Access the backend API:**
+     - The backend API should now be running at `http://localhost:5000`.
+
+## Running the Frontend
+1. **Navigate to the frontend directory:**
+    ```bash
+    cd src/frontend/dashboard-ui
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Run the frontend:**
+    ```bash
+    npm start
+    ```
+
+4. **Access the frontend:**
+     - The frontend should now be running at `http://localhost:3000`.
+
+---
 ## Further improvements:
 ### Backend:
 - Add storage for historical data (e.g. SQL database(Postgres) or NoSQL database(MongoDB))
